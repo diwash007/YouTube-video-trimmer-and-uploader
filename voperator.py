@@ -27,7 +27,8 @@ class Operator:
 			video_data = YouTube(self.video_url)
 			stream = video_data.streams.filter(res="720p").first()
 			if stream == None:
-				stream = video_data.streams.get_highest_resolution()
+				print("The video must have resolution of 16:9 and at least be 720p.")
+				exit(0)
 			stream.download(filename='video.mp4')
 		except:
 			print("Couldn't download the video. Please try again!")
