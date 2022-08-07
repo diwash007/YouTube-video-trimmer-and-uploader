@@ -8,7 +8,7 @@ Python program for YouTube video trimming and uploading using YouTube Data API
 # Prerequisties
 
  - [Python](https://www.python.org/)
- - [Imagemagick](https://download.imagemagick.org/ImageMagick/download/binaries/)
+ - [Imagemagick](https://imagemagick.org/script/download.php)
  - [Register your application with Google](https://developers.google.com/youtube/registering_an_application) so that it can use the [OAuth 2.0](http://oauth.net/2/) protocol to authorize access to YouTube upload.
  
  
@@ -16,9 +16,14 @@ Python program for YouTube video trimming and uploading using YouTube Data API
 # Installation
 Downloading files:
 ```
-gh repo clone diwash007/YouTube-video-trimmer-and-uploader
+git clone diwash007/YouTube-video-trimmer-and-uploader
 ```
 Installing requirements:
-```py
+```
 pip install -r requirements.txt
+```
+
+# Running
+```
+python3 main.py
 ```
