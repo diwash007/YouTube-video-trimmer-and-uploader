@@ -58,7 +58,7 @@ class Operator:
 			clip.close()
 			self.intro.close()
 		except:
-			print("Either 'Video.mp4' is not in the current directory.")
+			print("Either 'video.mp4' is not in the current directory.")
 			print("Or You entered Invalid input!!")
 			exit(0)
 
@@ -66,9 +66,9 @@ class Operator:
 		""" generates intro for the video """
 		clip = ColorClip((1280,720), (0,0,0), duration=5)
 		clip = clip.set_duration(5)
-		text_clip = TextClip(self.title, font="Helvetica", fontsize=90, color="white")
+		text_clip = TextClip(self.title, fontsize=90, color="white")
 		text_clip = text_clip.set_pos('center').set_duration(5)
-		text_clip1 = TextClip(self.subtitle, font="Helvetica", fontsize=60, color="white")
+		text_clip1 = TextClip(self.subtitle, fontsize=60, color="white")
 		text_clip1 = text_clip1.set_pos(('center', 400)).set_duration(5)
 		self.intro = CompositeVideoClip([clip, text_clip, text_clip1])
 
