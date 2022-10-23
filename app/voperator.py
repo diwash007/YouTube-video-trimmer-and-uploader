@@ -78,7 +78,7 @@ class Operator:
 			# video upload
 			description = input("\nEnter video description: ")
 			keywords = input("Enter keywords for video [comma separated]: ")
-			os.system(f'python upload_video.py\
+			os.system(f'python helpers/upload_video.py\
 						--file="{self.title}.mp4"\
 		               	--title="{self.title} | {self.subtitle}"\
 		               	--description="{self.title} | {self.subtitle} | {description}"\
@@ -92,7 +92,7 @@ class Operator:
 		try:
 			# thumbnail upload
 			video_id = input("\nCopy paste the video ID: ")
-			os.system(f'python upload_thumbnail.py --video-id="{video_id}"\
+			os.system(f'python helpers/upload_thumbnail.py --video-id="{video_id}"\
 						--file="thumbnail.png"')
 		except:
 			print("Couldn't upload the thumbnail.")

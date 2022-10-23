@@ -1,4 +1,4 @@
-from voperator import Operator
+from app.voperator import Operator
 
 
 if __name__ == "__main__":
